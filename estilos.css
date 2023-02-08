@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1100px;
+    margin: 50px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    box-shadow: 0 35px 55px #9c9c9c;
+}
+
+/* ////////////////////////////PARTE IZQUIERDA///////////////////////////// */
+.contenedor .parteIzquierda {
+    position: relative;
+    background: purple;
+    padding: 40px;
+}
+
+/* ////////////////////////////IMAGEN Y NOMBRE///////////////////////////// */
+.perfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid pink;
+
+}
+
+.perfil .foto {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil .foto img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.perfil h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.perfil span {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo {
+    padding-top: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* ////////////////////////////INFO CONTACTO///////////////////////////// */
+.contactoInfo ul {
+    position: relative;
+}
+
+.contactoInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactoInfo ul li .icono {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(252, 36, 137);
+}
+
+.contactoInfo ul li span {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+/* ////////////////////////////EDUCACION///////////////////////////// */
+.infoEducacion li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.infoEducacion h5 {
+    color: rgb(252, 36, 137);
+    font-weight: bold;
+}
+
+.infoEducacion h4:nth-child(2) {
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.infoEducacion h4 {
+    margin-top: 5px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+/* ////////////////////////////LENGUAJE///////////////////////////// */
+
+.infoLenguaje {
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.infoLenguaje ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.infoLenguaje .porcentaje {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: lightpink;
+    display: block;
+    margin-top: 5px;
+}
+
+.infoLenguaje .porcentaje div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(252, 36, 137);
+}
+
+
+/* ////////////////////////////HABILIDADES///////////////////////////// */
+.infoHabilidades ul {
+    position: relative;
+}
+
+.infoHabilidades ul li {
+    color: rgb(252, 36, 137);
+    position: relative;
+    margin: 10px 0;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.infoHabilidades ul li span {
+    color: #ffffff;
+    font-weight: 300px;
+}
+
+/* ////////////////////////////PARTE DERECHA///////////////////////////// */
+.contenedor .parteDerecha {
+    position: relative;
+    background: #ffffff;
+    padding: 40px;
+    margin-top: 0;
+}
+
+/* ////////////////////////////RESUMEN PROFESIONAL///////////////////////////// */
+.resumen {
+    margin-bottom: 0px;
+}
+
+.resumen:last-child {
+    margin-bottom: 0;
+}
+
+.titulo2 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: #5f5d5d;
+}
+
+/* ////////////////////////////ESPERIENCIA///////////////////////////// */
+
+.experiencia h4:nth-child(2) {
+    margin-top: 0px;
+    color: #5f5d5d;
+    font-weight: bold;
+}
+
+.experiencia h4 {
+    margin-top: 10px;
+    color: #5f5d5d;
+    font-weight: 100;
+}
+
+.experiencia ul li {
+    color: #5f5d5d;
+    position: relative;
+    margin: 15px 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.experiencia ul li p {
+    color: #5f5d5d;
+    margin-top: 0px;
+}
+
+/* ////////////////////////////FORMACION COMPLEMENTARIA///////////////////////////// */
+
+
+.formacionComplementaria h5 {
+    margin-top: 0px;
+    color: #5f5d5d;
+    font-weight: 100;
+}
+
+.formacionComplementaria h4 {
+    margin-top: 10px;
+    color: #5f5d5d;
+    font-weight: bold;
+}
+
+.formacionComplementaria ul li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.boton{
+    margin-top: 40px;
+    text-align: center;
+}
+.boton #boton{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color:white;
+    font-size: 18px;
+    font-weight: 450;
+    border: 0rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    margin: 10px 0 15px;
+    background-color: purple;
+    box-shadow: #9c9c9c;
+   
+}
+@media(max-width:845px) {
+    .contenedor {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
